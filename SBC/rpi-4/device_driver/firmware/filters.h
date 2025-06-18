@@ -107,7 +107,7 @@ static inline void initN2ADR(void) {
 	result = write(fd_i2c_n2adr, data, 2);
 
 	if (result >= 0) {
-		data[0] = 0x09;
+		data[0] = 0x12;
 		data[1] = 0x00;
 		/* set all pins to low */
 		result = write(fd_i2c_n2adr, data, 2);
@@ -139,7 +139,7 @@ static inline void handleN2ADRFilterBoard(char* buffer)
 			i2c_data = i2c_n2adr_data;
 			
 			unsigned char ldata[2];
-			ldata[0] = 0x09;
+			ldata[0] = 0x12;
 			ldata[1] = i2c_n2adr_data & 0xFF;
 			fprintf(stderr, "Set N2ADR data = %x \n", ldata[1]);
 
