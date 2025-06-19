@@ -64,7 +64,7 @@ elif [[ $input == "pihpsdr" ]]; then
 	install_dependency libi2c-dev
 	
 	cd /tmp
-	git clone https://github.com/VU2DLE/pihpsdr.git
+	git clone https://github.com/g0orx/pihpsdr.git
 	cd pihpsdr
 	
 	#makefile modification; when 'on' switch it 'off' (adding '#'). 
