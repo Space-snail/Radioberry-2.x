@@ -39,7 +39,7 @@ if [ -d "Radioberry-2.x" ]; then
     DO_CLEANUP=false
 else
     DO_CLEANUP=true
-	git clone  --depth=1 https://github.com/Space-snail/Radioberry-2.x
+	git clone  --depth=1 https://github.com/pa3gsb/Radioberry-2.x
 fi
 
 sudo systemctl stop radioberry
